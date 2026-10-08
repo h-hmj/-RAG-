@@ -1,0 +1,144 @@
+2026-10-05 20:09:41,544 - agent - ERROR - vector_store.py:98 - [加载知识库]E:\python-development\AL大模型RAG与智能体开发_Agent项目\data\扫地机器人100问.pdf加载失败：Error code: 400 - {'error': {'message': '<400> InternalError.Algo.InvalidParameter: Value error, batch size is invalid, it should not be larger than 10.: input.contents', 'type': 'InvalidParameter', 'param': None, 'code': 'InvalidParameter'}, 'id': 'a846de8f-ba58-99d3-9e71-a79e65bd4831', 'request_id': 'a846de8f-ba58-99d3-9e71-a79e65bd4831'}
+Traceback (most recent call last):
+  File "E:\python-development\AL大模型RAG与智能体开发_Agent项目\rag\vector_store.py", line 90, in load_document
+    self.vector_store.add_documents(split_document)
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\langchain_chroma\vectorstores.py", line 627, in add_texts
+    embeddings = self._embedding_function.embed_documents(texts)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\langchain_openai\embeddings\base.py", line 744, in embed_documents
+    response = self.client.create(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\openai\resources\embeddings.py", line 136, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\openai\_base_client.py", line 1332, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\openai\_base_client.py", line 1105, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': '<400> InternalError.Algo.InvalidParameter: Value error, batch size is invalid, it should not be larger than 10.: input.contents', 'type': 'InvalidParameter', 'param': None, 'code': 'InvalidParameter'}, 'id': 'a846de8f-ba58-99d3-9e71-a79e65bd4831', 'request_id': 'a846de8f-ba58-99d3-9e71-a79e65bd4831'}
+2026-10-05 20:09:42,156 - agent - ERROR - vector_store.py:98 - [加载知识库]E:\python-development\AL大模型RAG与智能体开发_Agent项目\data\扫地机器人100问2.txt加载失败：Error code: 400 - {'error': {'message': '<400> InternalError.Algo.InvalidParameter: Value error, batch size is invalid, it should not be larger than 10.: input.contents', 'type': 'InvalidParameter', 'param': None, 'code': 'InvalidParameter'}, 'id': '442345f5-c804-9afc-8f49-806641d64b63', 'request_id': '442345f5-c804-9afc-8f49-806641d64b63'}
+Traceback (most recent call last):
+  File "E:\python-development\AL大模型RAG与智能体开发_Agent项目\rag\vector_store.py", line 90, in load_document
+    self.vector_store.add_documents(split_document)
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\langchain_chroma\vectorstores.py", line 627, in add_texts
+    embeddings = self._embedding_function.embed_documents(texts)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\langchain_openai\embeddings\base.py", line 744, in embed_documents
+    response = self.client.create(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\openai\resources\embeddings.py", line 136, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\openai\_base_client.py", line 1332, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\openai\_base_client.py", line 1105, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': '<400> InternalError.Algo.InvalidParameter: Value error, batch size is invalid, it should not be larger than 10.: input.contents', 'type': 'InvalidParameter', 'param': None, 'code': 'InvalidParameter'}, 'id': '442345f5-c804-9afc-8f49-806641d64b63', 'request_id': '442345f5-c804-9afc-8f49-806641d64b63'}
+2026-10-05 20:09:42,871 - agent - ERROR - vector_store.py:98 - [加载知识库]E:\python-development\AL大模型RAG与智能体开发_Agent项目\data\扫拖一体机器人100问.txt加载失败：Error code: 400 - {'error': {'message': '<400> InternalError.Algo.InvalidParameter: Value error, batch size is invalid, it should not be larger than 10.: input.contents', 'type': 'InvalidParameter', 'param': None, 'code': 'InvalidParameter'}, 'id': 'b37206e0-7e91-9dd0-abd8-0229ca32457b', 'request_id': 'b37206e0-7e91-9dd0-abd8-0229ca32457b'}
+Traceback (most recent call last):
+  File "E:\python-development\AL大模型RAG与智能体开发_Agent项目\rag\vector_store.py", line 90, in load_document
+    self.vector_store.add_documents(split_document)
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\langchain_chroma\vectorstores.py", line 627, in add_texts
+    embeddings = self._embedding_function.embed_documents(texts)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\langchain_openai\embeddings\base.py", line 744, in embed_documents
+    response = self.client.create(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\openai\resources\embeddings.py", line 136, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\openai\_base_client.py", line 1332, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\openai\_base_client.py", line 1105, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': '<400> InternalError.Algo.InvalidParameter: Value error, batch size is invalid, it should not be larger than 10.: input.contents', 'type': 'InvalidParameter', 'param': None, 'code': 'InvalidParameter'}, 'id': 'b37206e0-7e91-9dd0-abd8-0229ca32457b', 'request_id': 'b37206e0-7e91-9dd0-abd8-0229ca32457b'}
+2026-10-05 20:09:43,588 - agent - ERROR - vector_store.py:98 - [加载知识库]E:\python-development\AL大模型RAG与智能体开发_Agent项目\data\故障排除.txt加载失败：Error code: 400 - {'error': {'message': '<400> InternalError.Algo.InvalidParameter: Value error, batch size is invalid, it should not be larger than 10.: input.contents', 'type': 'InvalidParameter', 'param': None, 'code': 'InvalidParameter'}, 'id': '5eb5eea3-62f7-9552-bf53-0a52db4b39dc', 'request_id': '5eb5eea3-62f7-9552-bf53-0a52db4b39dc'}
+Traceback (most recent call last):
+  File "E:\python-development\AL大模型RAG与智能体开发_Agent项目\rag\vector_store.py", line 90, in load_document
+    self.vector_store.add_documents(split_document)
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\langchain_chroma\vectorstores.py", line 627, in add_texts
+    embeddings = self._embedding_function.embed_documents(texts)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\langchain_openai\embeddings\base.py", line 744, in embed_documents
+    response = self.client.create(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\openai\resources\embeddings.py", line 136, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\openai\_base_client.py", line 1332, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\openai\_base_client.py", line 1105, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': '<400> InternalError.Algo.InvalidParameter: Value error, batch size is invalid, it should not be larger than 10.: input.contents', 'type': 'InvalidParameter', 'param': None, 'code': 'InvalidParameter'}, 'id': '5eb5eea3-62f7-9552-bf53-0a52db4b39dc', 'request_id': '5eb5eea3-62f7-9552-bf53-0a52db4b39dc'}
+2026-10-05 20:09:44,100 - agent - ERROR - vector_store.py:98 - [加载知识库]E:\python-development\AL大模型RAG与智能体开发_Agent项目\data\维护保养.txt加载失败：Error code: 400 - {'error': {'message': '<400> InternalError.Algo.InvalidParameter: Value error, batch size is invalid, it should not be larger than 10.: input.contents', 'type': 'InvalidParameter', 'param': None, 'code': 'InvalidParameter'}, 'id': '77eee7bf-7abc-9283-a76d-8e3df5ed32e1', 'request_id': '77eee7bf-7abc-9283-a76d-8e3df5ed32e1'}
+Traceback (most recent call last):
+  File "E:\python-development\AL大模型RAG与智能体开发_Agent项目\rag\vector_store.py", line 90, in load_document
+    self.vector_store.add_documents(split_document)
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\langchain_chroma\vectorstores.py", line 627, in add_texts
+    embeddings = self._embedding_function.embed_documents(texts)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\langchain_openai\embeddings\base.py", line 744, in embed_documents
+    response = self.client.create(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\openai\resources\embeddings.py", line 136, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\openai\_base_client.py", line 1332, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\openai\_base_client.py", line 1105, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': '<400> InternalError.Algo.InvalidParameter: Value error, batch size is invalid, it should not be larger than 10.: input.contents', 'type': 'InvalidParameter', 'param': None, 'code': 'InvalidParameter'}, 'id': '77eee7bf-7abc-9283-a76d-8e3df5ed32e1', 'request_id': '77eee7bf-7abc-9283-a76d-8e3df5ed32e1'}
+2026-10-05 20:09:44,409 - agent - ERROR - vector_store.py:98 - [加载知识库]E:\python-development\AL大模型RAG与智能体开发_Agent项目\data\选购指南.txt加载失败：Error code: 400 - {'error': {'message': '<400> InternalError.Algo.InvalidParameter: Value error, batch size is invalid, it should not be larger than 10.: input.contents', 'type': 'InvalidParameter', 'param': None, 'code': 'InvalidParameter'}, 'id': 'defb0237-cc9f-9aef-bb7e-d2ae2b4dfac8', 'request_id': 'defb0237-cc9f-9aef-bb7e-d2ae2b4dfac8'}
+Traceback (most recent call last):
+  File "E:\python-development\AL大模型RAG与智能体开发_Agent项目\rag\vector_store.py", line 90, in load_document
+    self.vector_store.add_documents(split_document)
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\langchain_chroma\vectorstores.py", line 627, in add_texts
+    embeddings = self._embedding_function.embed_documents(texts)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\langchain_openai\embeddings\base.py", line 744, in embed_documents
+    response = self.client.create(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\openai\resources\embeddings.py", line 136, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\openai\_base_client.py", line 1332, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86180\AppData\Roaming\Python\Python312\site-packages\openai\_base_client.py", line 1105, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': '<400> InternalError.Algo.InvalidParameter: Value error, batch size is invalid, it should not be larger than 10.: input.contents', 'type': 'InvalidParameter', 'param': None, 'code': 'InvalidParameter'}, 'id': 'defb0237-cc9f-9aef-bb7e-d2ae2b4dfac8', 'request_id': 'defb0237-cc9f-9aef-bb7e-d2ae2b4dfac8'}
+2026-10-05 20:12:22,144 - agent - INFO - vector_store.py:97 - [加载知识库]E:\python-development\AL大模型RAG与智能体开发_Agent项目\data\扫地机器人100问.pdf 内容加载成功
+2026-10-05 20:12:24,194 - agent - INFO - vector_store.py:97 - [加载知识库]E:\python-development\AL大模型RAG与智能体开发_Agent项目\data\扫地机器人100问2.txt 内容加载成功
+2026-10-05 20:12:26,065 - agent - INFO - vector_store.py:97 - [加载知识库]E:\python-development\AL大模型RAG与智能体开发_Agent项目\data\扫拖一体机器人100问.txt 内容加载成功
+2026-10-05 20:12:29,655 - agent - INFO - vector_store.py:97 - [加载知识库]E:\python-development\AL大模型RAG与智能体开发_Agent项目\data\故障排除.txt 内容加载成功
+2026-10-05 20:12:32,037 - agent - INFO - vector_store.py:97 - [加载知识库]E:\python-development\AL大模型RAG与智能体开发_Agent项目\data\维护保养.txt 内容加载成功
+2026-10-05 20:12:34,293 - agent - INFO - vector_store.py:97 - [加载知识库]E:\python-development\AL大模型RAG与智能体开发_Agent项目\data\选购指南.txt 内容加载成功
+2026-10-05 20:13:09,771 - agent - INFO - vector_store.py:73 - [加载知识库]E:\python-development\AL大模型RAG与智能体开发_Agent项目\data\扫地机器人100问.pdf内容已经存在知识库内，跳过
+2026-10-05 20:13:09,772 - agent - INFO - vector_store.py:73 - [加载知识库]E:\python-development\AL大模型RAG与智能体开发_Agent项目\data\扫地机器人100问2.txt内容已经存在知识库内，跳过
+2026-10-05 20:13:09,773 - agent - INFO - vector_store.py:73 - [加载知识库]E:\python-development\AL大模型RAG与智能体开发_Agent项目\data\扫拖一体机器人100问.txt内容已经存在知识库内，跳过
+2026-10-05 20:13:09,774 - agent - INFO - vector_store.py:73 - [加载知识库]E:\python-development\AL大模型RAG与智能体开发_Agent项目\data\故障排除.txt内容已经存在知识库内，跳过
+2026-10-05 20:13:09,775 - agent - INFO - vector_store.py:73 - [加载知识库]E:\python-development\AL大模型RAG与智能体开发_Agent项目\data\维护保养.txt内容已经存在知识库内，跳过
+2026-10-05 20:13:09,775 - agent - INFO - vector_store.py:73 - [加载知识库]E:\python-development\AL大模型RAG与智能体开发_Agent项目\data\选购指南.txt内容已经存在知识库内，跳过
